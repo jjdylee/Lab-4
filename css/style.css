@@ -2,101 +2,182 @@
 * {
   box-sizing: border-box;
 }
-body {
-  margin: 8px;
-  color: #263238;
-  font-family: "Times New Roman", serif;
-  font-size: 16px;
-}
-h1 { font-size: 32px; }
-h2 { font-size: 24px; }
-h3 { font-size: 20px; }
 
+body {
+  margin: 0;
+  background-color: #DBEFF6;
+  color: #263238;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 32px;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 1.25;
+  margin-bottom: 16px;
+}
+
+h3 {
+  font-size: 20px;
+  line-height: 1.3;
+  margin-bottom: 12px;
+}
+
+p {
+  margin-bottom: 16px;
+}
+
+/* Header */
 .site-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 12px;
   padding: 20px;
-  background-color: #E8E5DC;
-}
-.nav-links a {
-  text-decoration: none;
-  color: #354F60;
-  margin: 0 10px;
-}
-.container {
-  display: flex;
-  flex-direction: column;
+  background-color: #A8D8E3;
 }
 
-/* Mobile: one column */
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #263238;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* Main content */
+.container {
+  padding: 24px 20px;
+}
+
+/* Mobile-first: one column */
 .hero-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 10px;
-  margin: 10px 0;
+  gap: 24px;
+  margin-bottom: 24px;
 }
+
 .hero-banner {
-  background-color: #EAD8C5;
-  padding: 20px;
+  padding: 24px;
+  background-color: #E9DFE2;
 }
+
 .hero-sidebar {
-  background-color: #C6D8E4;
-  padding: 20px;
+  padding: 24px;
+  background-color: #A8D8E3;
 }
+
+/* Workshop gallery */
 .cards-gallery {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 10px;
+  gap: 24px;
 }
+
 .card {
   display: flex;
   flex-direction: column;
-  background-color: #DAE5EC;
-  border-radius: 10px;
   padding: 20px;
+  border-radius: 6px;
+  background-color: #E9DFE2;
 }
-/* Small image placeholders required by the lab blueprint */
+
 .card-img {
-  height: 50px;
-  background-color: #BFCDD6;
+  display: block;
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  background-color: #C5B8BF;
+  margin-bottom: 16px;
 }
-.btn-primary, .btn-card {
-  font-family: Arial, sans-serif;
-  font-size: 13px;
-  color: #263238;
-  background-color: #F4F4F4;
-  border: 1px solid #888888;
-  border-radius: 2px;
-  padding: 2px 6px;
+
+.photo-credit {
+  font-size: 12px;
+}
+
+/* Simple links styled as buttons */
+.btn-primary,
+.btn-card {
+  display: inline-block;
+  padding: 6px 12px;
+  background-color: #5D7389;
+  color: white;
+  border-radius: 3px;
   text-decoration: none;
 }
+
 .btn-card {
   margin-top: auto;
   align-self: flex-start;
 }
+
+.btn-primary:hover,
+.btn-card:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
 .site-footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  gap: 10px;
-  background-color: #354F60;
+  gap: 16px;
+  padding: 20px;
+  background-color: #5D7389;
   color: white;
-  padding: 5px 20px;
-  margin-top: 10px;
 }
+
+.site-footer p {
+  margin-bottom: 6px;
+}
+
 .site-footer a {
   color: white;
 }
 
-/* Desktop layout required by Lab 4 */
+/* Desktop */
 @media (min-width: 768px) {
+  .site-header,
+  .site-footer {
+    padding: 20px 80px;
+  }
+
+  .container {
+    padding: 24px 80px;
+  }
+
   .hero-grid {
     grid-template-columns: 2fr 1fr;
   }
+
   .cards-gallery {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }

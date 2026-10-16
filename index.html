@@ -1,64 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CCT360 Lab 4: Creative Workshop & Event Directory</title>
-<link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Still Light Photography Workshops</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body id="home">
-<!-- Site Header -->
-<header class="site-header">
-  <div class="logo">CCT360 Hub</div>
-  <nav class="nav-links">
-    <a href="#home">Home</a>
-    <a href="#workshops">Workshops</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
-<!-- Main Content Container -->
-<main class="container">
-  <section class="hero-grid">
-    <article class="hero-banner">
-      <h1>Creative Media Workshops</h1>
-      <p>Explore hands-on UI/UX and web design labs built using hybrid CSS Grid and Flexbox.</p>
-      <a class="btn-primary" href="#workshops">Browse Schedule</a>
-    </article>
-    <aside class="hero-sidebar">
-      <h2>Quick Stats</h2>
-      <p><strong>Next Session:</strong> 2:00 PM (sample)</p>
-    </aside>
-  </section>
-  <section class="cards-gallery" id="workshops" aria-label="Workshops">
-    <article class="card">
-      <div class="card-img" aria-hidden="true"></div>
-      <h3>Figma Wireframing</h3>
-      <p>Learn layout grids and design tokens without Auto-Layout.</p>
-      <button class="btn-card" type="button">Register</button>
-    </article>
-    <article class="card">
-      <div class="card-img" aria-hidden="true"></div>
-      <h3>CSS Grid Architecture</h3>
-      <p>Master macro page framing and asymmetric hero splits.</p>
-      <button class="btn-card" type="button">Register</button>
-    </article>
-    <article class="card">
-      <div class="card-img" aria-hidden="true"></div>
-      <h3>Flexbox Components</h3>
-      <p>Align navigation headers and push buttons to card bottoms.</p>
-      <button class="btn-card" type="button">Register</button>
-    </article>
-    <article class="card">
-      <div class="card-img" aria-hidden="true"></div>
-      <h3>GitHub Pages Deploy</h3>
-      <p>Publish your live web showcase project directly to the web.</p>
-      <button class="btn-card" type="button">Register</button>
-    </article>
-  </section>
-</main>
-<footer class="site-footer" id="contact">
-  <p>&copy; 2026 CCT360 Web Development and Design II</p>
-<a href="#home">Back to top</a>
-</footer>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="logo">Still Light</div>
+
+    <nav class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#workshops">Workshops</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <!-- Hero section -->
+    <section class="hero-grid">
+      <article class="hero-banner">
+        <h1>Photography Workshops</h1>
+
+        <p>
+          Explore classic photographs and practise seeing light,
+          people and everyday stories through your own camera.
+        </p>
+
+        <a class="btn-primary" href="#workshops">
+          Browse Workshops
+        </a>
+      </article>
+
+      <aside class="hero-sidebar">
+        <h2>Quick Info</h2>
+        <p><strong>Level:</strong> Beginner</p>
+        <p><strong>Bring:</strong> A camera or phone</p>
+        <p><strong>Format:</strong> Photo discussion and practice</p>
+      </aside>
+    </section>
+
+    <!-- Workshop cards -->
+    <section
+      class="cards-gallery"
+      id="workshops"
+      aria-label="Photography workshops"
+    >
+      <article class="card">
+        <img
+          class="card-img"
+          src="assets/adams.jpg"
+          alt="The Snake River winding towards the Teton mountains"
+        >
+
+        <h3>Landscape &amp; Light</h3>
+
+        <p class="photo-credit">
+          Ansel Adams<br>
+          The Tetons – Snake River, 1942<br>
+          Source: National Archives
+        </p>
+
+        <p>
+          Study the river's curved line and the contrast between
+          the mountains and sky. Then practise finding leading
+          lines in a nearby landscape.
+        </p>
+
+        <p><strong>Session:</strong> 60-minute photo walk</p>
+
+        <a
+          class="btn-card"
+          href="https://www.archives.gov/research/still-pictures/highlights/the-tetons-snake-river"
+        >
+          View Photograph
+        </a>
+      </article>
+
+      <article class="card">
+        <img
+          class="card-img"
+          src="assets/lange.jpg"
+          alt="Florence Owens Thompson seated with her children"
+        >
+
+        <h3>Portrait &amp; Emotion</h3>
+
+        <p class="photo-credit">
+          Dorothea Lange<br>
+          Migrant Mother, 1936<br>
+          Source: Library of Congress
+        </p>
+
+        <p>
+          Discuss how expression, hands and framing shape a
+          portrait. Practise making a portrait with a willing
+          partner using natural light.
+        </p>
+
+        <p><strong>Session:</strong> 45-minute portrait practice</p>
+
+        <a
+          class="btn-card"
+          href="https://www.loc.gov/item/2004681697/"
+        >
+          View Photograph
+        </a>
+      </article>
+
+      <article class="card">
+        <img
+          class="card-img"
+          src="assets/hine.jpg"
+          alt="Addie Card standing beside machinery in a cotton mill"
+        >
+
+        <h3>Documentary Stories</h3>
+
+        <p class="photo-credit">
+          Lewis Hine<br>
+          Addie Card, North Pownal Cotton Mill, 1910<br>
+          Source: Library of Congress
+        </p>
+
+        <p>
+          Explore how a person's surroundings add context to
+          a photograph. Create a short photo story about an
+          everyday activity and write a factual caption.
+        </p>
+
+        <p><strong>Session:</strong> 60-minute storytelling exercise</p>
+
+        <a
+          class="btn-card"
+          href="https://www.loc.gov/item/2018675329/"
+        >
+          View Photograph
+        </a>
+      </article>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" id="about">
+    <div>
+      <p><strong>Still Light Photography Workshops</strong></p>
+      <p>
+        A CCT360 classroom project. Workshop sessions are fictional.
+      </p>
+      <p>Photographs belong to their credited creators.</p>
+    </div>
+
+    <a href="#home">Back to top</a>
+  </footer>
 </body>
 </html>
